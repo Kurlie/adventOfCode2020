@@ -35,3 +35,17 @@ while start < end:
 # output our answer
 print(data[start], data[end], data[start] + data[end])
 print(r)
+
+check = 0
+item = 0
+r2 = 0
+start2 = 0
+end2 = len(data) - 1
+
+for i in data:
+    for j in reversed(data):
+        #print(i, j)
+        check = s - i - j
+        if (check in data):
+            print('first for loop value', i, ',2nd for loop value', j,
+                  ', answer, fist, 2nd and difference between sum', i * j * check)
