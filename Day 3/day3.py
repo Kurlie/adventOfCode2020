@@ -24,13 +24,12 @@ def countTrees(arr, xInc, yInc):
     rowWidth = len(arr[0])
     arrLen = len(arr)
 
-    for y in range(arrLen):  # - yInc
+    for y in range(arrLen):
         # print(y)
         if (y % yInc != 0):
             continue
-        if (arr[y][x] == '#'):  # +yInc
+        if (arr[y][x] == '#'):
             treeCount += 1
-            # print(arr[y+yInc][x])  # +yInc
 
         x = (x + xInc) % rowWidth
 
